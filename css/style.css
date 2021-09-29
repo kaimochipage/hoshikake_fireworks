@@ -59,6 +59,7 @@ a {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 80px;
 }
 
 .fv-logo {
@@ -75,6 +76,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: none;
 }
 
 .header-nav__top {
@@ -120,13 +122,16 @@ a {
 
 .header-nav__bottom-list span {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-style: normal;
   position: relative;
   top: -10px;
 }
 
 /* ----- catch */
+.catch {
+  padding: 80px 0;
+}
 
 .catch-inner {
   display: flex;
@@ -144,4 +149,6 @@ a {
   text-align: left;
   writing-mode: vertical-rl;
   line-height: 2;
+  letter-spacing: 0.7rem;
+  margin-left: 1.6rem;
 }
