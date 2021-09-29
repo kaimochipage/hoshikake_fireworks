@@ -18,7 +18,7 @@
   <!-- ----- Webfont読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/utu6arl.css">
   <script>
     (function (d) {
@@ -46,15 +46,20 @@
       </h1>
       <div class="header-nav">
         <ul class="header-nav__top">
-          <li><a href="#" class="header-nav__top-list">よくある質問</a></li>
-          <li><a href="#" class="header-nav__top-list">お問い合わせ</a></li>
+          <li class="header-nav__list--top"><a href="#" class="header-nav__top-list">よくある質問</a></li>
+          <li class="header-nav__list--top"><a href="#" class="header-nav__top-list">お問い合わせ</a></li>
         </ul>
         <ul class="header-nav__bottom">
-          <li><a href="#" class="header-nav__bottom-list">ABOUT<br><span>星駆花火大会とは</span></a></li>
-          <li><a href="#program" class="header-nav__bottom-list">PROGRAM<br><span>当日のプログラム</span></a></li>
-          <li><a href="#ticket" class="header-nav__bottom-list">TICKET<br><span>各種チケット</span></a></li>
-          <li><a href="#eventsite" class="header-nav__bottom-list">EVENT SITE<br><span>会場のご案内</span></a></li>
-          <li><a href="#access" class="header-nav__bottom-list">ACCESS<br><span>アクセス</span></a></li>
+          <li class="header-nav__list"><a href="#" class="header-nav__bottom-list">ABOUT<br><span>星駆花火大会とは</span></a>
+          </li>
+          <li class="header-nav__list"><a href="#program"
+              class="header-nav__bottom-list">PROGRAM<br><span>当日のプログラム</span></a></li>
+          <li class="header-nav__list"><a href="#ticket"
+              class="header-nav__bottom-list">TICKET<br><span>各種チケット</span></a></li>
+          <li class="header-nav__list"><a href="#eventsite" class="header-nav__bottom-list">EVENT
+              SITE<br><span>会場のご案内</span></a></li>
+          <li class="header-nav__list"><a href="#access" class="header-nav__bottom-list">ACCESS<br><span>アクセス</span></a>
+          </li>
         </ul>
       </div>
     </header>
@@ -64,12 +69,9 @@
         <ul class="catch-inner">
           <li class="catch-inner__list"><img class="catch-inner__img" src="img/catch_bg01.jpg"></li>
           <li class="catch-inner__list">
-            <p class="catch-inner__text">人口九三〇人。</p>
-            <p class="catch-inner__text">小さな島の、大きなお祭り</p>
-            <p class="catch-inner__text catch-inner__text--center">夏の一大風物詩。</p>
-            <p class="catch-inner__text">「大切な人と、空を見上げて」。</p>
-            <p class="catch-inner__text">夜空を彩る、二万発の花火と共に、</p>
-            <p class="catch-inner__text">みなさまのお越しをお待ちしております。</p>
+            <p class="catch-inner__text">人口九三〇人。<br>小さな島の、大きなお祭り<br>夏の一大風物詩。
+              <br>「大切な人と、空を見上げて」。<br>夜空を彩る、二万発の花火と共に、<br>みなさまのお越しをお待ちしております。
+            </p>
           </li>
           <li class="catch-inner__list"><img class="catch-inner__img" src="img/catch_bg02.jpg"></li>
         </ul>
@@ -77,8 +79,8 @@
     </section>
 
     <section class="program" id="program">
-      <div class="sevtion-title">
-        <p class="title-copy">Hoshikake</p>
+      <div class="section-title">
+        <p class="title-copy title-copy__hoshikake">Hoshikake</p>
         <h1 class="title-en">RROGRAM</h1>
         <h2 class="title-ja">当日のプログラム</h2>
       </div>
@@ -94,8 +96,8 @@
     </section>
 
     <section class="ticket" id="ticket">
-      <div class="sevtion-title">
-        <p class="title-copy">Fireworks</p>
+      <div class="section-title">
+        <p class="title-copy title-copy__fireworks">Fireworks</p>
         <h1 class="title-en">TICKET</h1>
         <h2 class="title-ja">各種チケット</h2>
       </div>
@@ -135,8 +137,8 @@
     </section>
 
     <section class="eventsite" id="eventsite">
-      <div class="sevtion-title">
-        <p class="title-copy">Conpetition</p>
+      <div class="section-title">
+        <p class="title-copy title-copy__conpetiton">Conpetition</p>
         <h1 class="title-en">EVENT SITE</h1>
         <h2 class="title-ja">会場のご案内</h2>
       </div>
@@ -146,10 +148,10 @@
     </section>
 
     <section class="access" id="access">
-      <div class="sevtion-title">
-        <p class="title-copy">Conpetition</p>
-        <h1 class="title-en">EVENT SITE</h1>
-        <h2 class="title-ja">会場のご案内</h2>
+      <div class="section-title">
+        <p class="title-copy title-copy__kitagishima">Kitagishima</p>
+        <h1 class="title-en">ACCESS</h1>
+        <h2 class="title-ja">アクセス</h2>
       </div>
       <div class="access-wrapper">
         <div class="access-inner">
@@ -178,11 +180,11 @@
               <div class="access-inner">
                 <dl class="access-content">
                   <dt class="access-content__to">大福丸フェリー , 金風呂丸フェリー</dt>
-                  <dd class="access-content__how">伏越港 (笠岡駅徒歩15分) ⇄  豊浦港 / 金風呂港</dd>
+                  <dd class="access-content__how">伏越港 (笠岡駅徒歩15分) ⇄ 豊浦港 / 金風呂港</dd>
                 </dl>
                 <dl class="access-content">
                   <dt class="access-content__to">旅客船 (三洋汽船)</dt>
-                  <dd class="access-content__how">住吉港 (笠岡駅徒歩5分) ⇄  楠港 / 大浦港</dd>
+                  <dd class="access-content__how">住吉港 (笠岡駅徒歩5分) ⇄ 楠港 / 大浦港</dd>
                 </dl>
               </div>
               <h4 class="access-info">※料金 / 時刻表は、<a href="#">各運行会社HP</a>よりご確認ください。</h4>
@@ -196,14 +198,14 @@
     </section>
   </main>
 
-    <footer class="footer">
-      <div class="footer-wrapper">
-        <img class="footer-logo" src="img/HFlogo.png">
-        <p class="info">岡山県笠岡市北木島星駆町</p>
-        <p class="info">0865-12-3456 (代表)</p>
-      </div>
-      <p class="copyright">&copy;Hoshikake Fireworks Conpetiton Kitagishima </p>
-    </footer>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <img class="footer-logo" src="img/HFlogo.png">
+      <p class="info">岡山県笠岡市北木島星駆町</p>
+      <p class="info">0865-12-3456 (代表)</p>
+    </div>
+    <p class="copyright">&copy;Hoshikake Fireworks Conpetiton Kitagishima </p>
+  </footer>
   <!-- ----- JS読み込み -->
   <script src="js/script.js"></script>
 </body>

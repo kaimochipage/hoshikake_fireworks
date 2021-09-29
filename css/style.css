@@ -4,7 +4,8 @@
 
 html {
   font-size: 62.5%;
-  color: #333;
+  color: #fff;
+  background-color: #000;
   box-sizing: border-box;
 }
 
@@ -21,24 +22,126 @@ body {
 
 a {
   text-decoration: none;
-  color: #333;
-}
-
-.en {
-  font-family: urw-din-semi-condensed, sans-serif;
-  font-weight: 600;
-  font-style: italic;
+  color: #fff;
 }
 
 .section-title {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
-.section-title__title {
-  font-size: 6rem;
-  margin-bottom: 10px;
+.title-copy {
+  font-family: lakeside, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10rem;
+  position: relative;
+  top: 8rem;
+  left: 6rem;
+  z-index: -1;
+  transform: rotate(-5deg);
 }
 
-.section-title__content {
-  font-size: 1.6rem;
+.title-en {
+  font-family: 'Lato', sans-serif;
+  font-size: 7rem;
+  margin-bottom: -15px;
+}
+
+.title-ja {
+  font-size: 2rem;
+}
+
+/* ----- fv */
+
+.firstview {
+  height: 100vh;
+  background-image: url(../img/fv_bg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fv-logo {
+  width: 50vw;
+  position: relative;
+  top: 45vh;
+  left: 22vw;
+}
+
+/* ----- header */
+
+.header {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav__top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-nav__bottom {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.header__logo {
+  width: 25vw;
+  padding-left: 40px;
+}
+
+.header-nav__list {
+  margin-left: 2.4rem;
+}
+
+.header-nav__top-list {
+  background: #fff;
+  color: #000;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+}
+
+.header-nav__list--top {
+  margin-right: 0.2rem;
+}
+
+.header-nav__bottom {
+  padding: 30px 40px;
+}
+.header-nav__bottom-list {
+  font-family: 'Lato', sans-serif;
+  font-size: 2.6rem;
+  font-style: italic;
+  letter-spacing: 0.1;
+}
+
+.header-nav__bottom-list span {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  position: relative;
+  top: -10px;
+}
+
+/* ----- catch */
+
+.catch-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catch-inner__img {
+  width: 30vw;
+}
+
+.catch-inner__text {
+  font-family: fot-tsukumin-pr6n, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  writing-mode: vertical-rl;
+  line-height: 2;
 }
