@@ -32,6 +32,7 @@
   </script>
   <!-- ----- CSS読み込み -->
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -40,30 +41,6 @@
     <img class="fv-logo" src="img/FVlogo.png">
   </div>
   <main>
-    <header class="header">
-      <h1 class="header-logo">
-        <img class="header__logo" src="img/HFlogo.png">
-      </h1>
-      <div class="header-nav">
-        <ul class="header-nav__top">
-          <li class="header-nav__list--top"><a href="#" class="header-nav__top-list">よくある質問</a></li>
-          <li class="header-nav__list--top"><a href="#" class="header-nav__top-list">お問い合わせ</a></li>
-        </ul>
-        <ul class="header-nav__bottom">
-          <li class="header-nav__list"><a href="#" class="header-nav__bottom-list">ABOUT<br><span>星駆花火大会とは</span></a>
-          </li>
-          <li class="header-nav__list"><a href="#program"
-              class="header-nav__bottom-list">PROGRAM<br><span>当日のプログラム</span></a></li>
-          <li class="header-nav__list"><a href="#ticket"
-              class="header-nav__bottom-list">TICKET<br><span>各種チケット</span></a></li>
-          <li class="header-nav__list"><a href="#eventsite" class="header-nav__bottom-list">EVENT
-              SITE<br><span>会場のご案内</span></a></li>
-          <li class="header-nav__list"><a href="#access" class="header-nav__bottom-list">ACCESS<br><span>アクセス</span></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-
     <section class="catch">
       <div class="catch-wrapper">
         <ul class="catch-inner">
@@ -82,6 +59,30 @@
         </ul>
       </div>
     </section>
+    
+    <header class="header" id="header">
+      <h1 class="header-logo">
+        <img class="header__logo" src="img/HFlogo.png">
+      </h1>
+      <nav class="header-nav">
+        <ul class="header-nav__top">
+          <li class="header-nav__list--top"><a href="#" class="header-nav__top-list">よくある質問</a></li>
+          <li class="header-nav__list--top"><a href="#" class="header-nav__top-list">お問い合わせ</a></li>
+        </ul>
+        <ul class="header-nav__bottom">
+          <li class="header-nav__list"><a href="#" class="header-nav__bottom-list">ABOUT<br><span>星駆花火大会とは</span></a>
+          </li>
+          <li class="header-nav__list"><a href="#program"
+              class="header-nav__bottom-list">PROGRAM<br><span>当日のプログラム</span></a></li>
+          <li class="header-nav__list"><a href="#ticket"
+              class="header-nav__bottom-list">TICKET<br><span>各種チケット</span></a></li>
+          <li class="header-nav__list"><a href="#eventsite" class="header-nav__bottom-list">EVENT
+              SITE<br><span>会場のご案内</span></a></li>
+          <li class="header-nav__list"><a href="#access" class="header-nav__bottom-list">ACCESS<br><span>アクセス</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <section class="program" id="program">
       <div class="section-title">
@@ -90,11 +91,50 @@
         <h2 class="title-ja">当日のプログラム</h2>
       </div>
       <div class="program-wrapper">
-        <div class="slide">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="program-inner">
+          <ul class="slider">
+            <li class="program-list"><a class="program-link" href="#">
+                <img class="program-class" src="img/program_img01.jpg">
+                <div class="program-content">
+                  <h3 class="program-title">花火だけじゃない ! 圧巻の和太鼓パフォーマンス</h3>
+                  <p class="program-text">地元団体「和太鼓KTG」が、会場の雰囲気を盛り上げます !</p>
+                </div>
+              </a></li>
+            <li class="program-list"><a class="program-link" href="#">
+                <img class="program-class" src="img/fv_bg.jpg">
+                <div class="program-content">
+                  <h3 class="program-title">圧倒的打上数 ! 今年はなんと、2時間で2万発 ! </h3>
+                  <p class="program-text">毎年進化し続ける、星駆花火大会。2時間で2万発は国内最大級です !</p>
+                </div>
+              </a></li>
+            <li class="program-list"><a class="program-link" href="#">
+                <img class="program-class" src="img/program_img03.jpg">
+                <div class="program-content">
+                  <h3 class="program-title">北木島ならでは体験「北木石でアクセサリーを作ろう」</h3>
+                  <p class="program-text">島の産業を支える「北木石」の魅力を、間近に感じてください !</p>
+                </div>
+              </a></li>
+            <li class="program-list"><a class="program-link" href="#">
+                <img class="program-class" src="img/program_img01.jpg">
+                <div class="program-content">
+                  <h3 class="program-title">花火だけじゃない ! 圧巻の和太鼓パフォーマンス</h3>
+                  <p class="program-text">地元団体「和太鼓KTG」が、会場の雰囲気を盛り上げます !</p>
+                </div>
+              </a></li>
+            <li class="program-list"><a class="program-link" href="#">
+                <img class="program-class" src="img/fv_bg.jpg">
+                <div class="program-content">
+                  <h3 class="program-title">圧倒的打上数 ! 今年はなんと、2時間で2万発 ! </h3>
+                  <p class="program-text">毎年進化し続ける、星駆花火大会。2時間で2万発は国内最大級です !</p>
+                </div>
+              </a></li>
+            <li class="program-list"><a class="program-link" href="#">
+                <img class="program-class" src="img/program_img03.jpg">
+                <div class="program-content">
+                  <h3 class="program-title">北木島ならでは体験「北木石でアクセサリーを作ろう」</h3>
+                  <p class="program-text">島の産業を支える「北木石」の魅力を、間近に感じてください !</p>
+                </div>
+              </a></li>
           </ul>
         </div>
       </div>
@@ -237,6 +277,9 @@
     <p class="copyright">&copy;Hoshikake Fireworks Conpetiton Kitagishima </p>
   </footer>
   <!-- ----- JS読み込み -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
