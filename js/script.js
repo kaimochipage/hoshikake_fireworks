@@ -14,16 +14,48 @@
     dots: true,
   });
 
-  //ヘッダー
-  var nav_pos = $(".header").offset().top;
-  var nav_height = $(".header").outerHeight();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > nav_pos) {
-      $("body").css("padding-top", nav_height);
-      $(".header").addClass("fixed");
-    } else {
-      $("body").css("padding-top", 0);
-      $(".header").removeClass("fixed");
-    }
+  //PCヘッダー
+  if (window.matchMedia("(min-width: 801px)").matches) {
+    var nav_pos = $(".header").offset().top;
+    var nav_height = $(".header").outerHeight();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > nav_pos) {
+        $("body").css("padding-top", nav_height);
+        $(".header").addClass("fixed");
+      } else {
+        $("body").css("padding-top", 0);
+        $(".header").removeClass("fixed");
+      }
+    });
+  }
+
+  //SPヘッダー
+  if (window.matchMedia("(max-width: 800px)").matches) {
+    var nav_pos = $(".header--sp").offset().top;
+    var nav_height = $(".header--sp").outerHeight();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > nav_pos) {
+        $("body").css("padding-top", nav_height);
+        $(".header--sp").addClass("fixed");
+      } else {
+        $("body").css("padding-top", 0);
+        $(".header--sp").removeClass("fixed");
+      }
+    });
+  }
+
+  //ハンバーガー
+  $('.burger-btn').on('click', function () {
+    $('.burger-btn').toggleClass('close');
+    $('.nav-wrapper').fadeToggle(500);
+    $('body').toggleClass('noscroll');
   });
+
+  $(function () {
+    $('.nav-item').on('click', () => {
+        $('.nav-wrapper').fadeOut();
+        $('.burger-btn').toggleClass('close');
+    });
+  });
+
 }
