@@ -33,6 +33,7 @@
   <!-- ----- CSS読み込み -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -44,7 +45,8 @@
     <section class="catch">
       <div class="catch-wrapper">
         <ul class="catch-inner">
-          <li class="catch-inner__list"><img class="catch-inner__img catch-inner__img--pc" src="img/catch_bg01.jpg"></li>
+          <li class="catch-inner__list"><img class="catch-inner__img catch-inner__img--pc" src="img/catch_bg01.jpg">
+          </li>
           <li class="catch-inner__list">
             <p class="catch-inner__text">
               人口九三〇人。<br>
@@ -67,7 +69,7 @@
         </ul>
       </div>
     </section>
-    
+
     <header class="header" id="header">
       <h1 class="header-logo">
         <img class="header__logo" src="img/HFlogo.png">
@@ -238,7 +240,14 @@
         <h2 class="title-ja">会場のご案内</h2>
       </div>
       <div class="event-wrapper">
-        <img class="map" src="img/map.jpg">
+        <!--    --- ↓元から表示されてる写真 --- -->
+        <div id="eventmap">
+          <a href="#eventmap--hide"><img class="eventmap-img" src="img/map.jpg"></a>
+        </div>
+        <!--    --- ↓ウィンドウで出したい写真 --- -->
+        <div id="eventmap--hide" class="hide-area">
+          <img class="eventmap-img eventmap-img--hide" src="img/sitemap.png">
+        </div>
       </div>
     </section>
 
@@ -309,6 +318,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
