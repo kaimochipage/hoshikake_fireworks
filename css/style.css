@@ -24,6 +24,11 @@ a {
   color: #fff;
 }
 
+a:hover {
+  opacity: 0.5;
+  transition: .3s;
+}
+
 .section-title {
   margin-bottom: 80px;
   position: relative;
