@@ -347,17 +347,13 @@ transform: rotate(-135deg);
   color: #2DACFF;
 }
 
-.map {
-  width: 55vw;
-}
-
 .eventmap-img {
-  width: 60vw;
+  width: 50vw;
   object-fit: cover;
 }
 
 .eventmap-img--hide {
-  width: 70vw;
+  width: 45vw;
   margin: 0 auto;
 }
 
@@ -761,7 +757,7 @@ transform: rotate(-135deg);
   }
 
   .eventmap-img {
-    width: 85vw;
+    width: 70vw;
   }
 
   .access-text {
@@ -820,8 +816,8 @@ transform: rotate(-135deg);
     left: 80%;
   }
 
-  .map {
-    width: 80vw;
+  .eventmap-img {
+    width: 85vw;
   }
 
   .footer-logo {
@@ -869,7 +865,7 @@ transform: rotate(-135deg);
   }
 }
 
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 400px) { 
   .title-copy {
     left: 40vw;
   }
